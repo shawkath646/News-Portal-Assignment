@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/844c24b1cd.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>News--Portal--Assignment</title>
+</head>
+<body class="bg-gray-200">
+  <header class="py-4 border-b-2 border-gray-300 mx-2 px-6 flex items-center justify-between font-semibold">
+    <div class="flex space-x-2">
+      <p class="py-1 px-2 rounded-sm text-white bg-violet-600">News</p>
+      <p class="text-violet-600 p-1">Portal</p>
+    </div>
+    <div class="flex space-x-3 items-center text-gray-400">
+      <p>News</p>
+      <p>Blogs</p>
+      <img src="images/user_profile.jpg" alt="User profile" class="rounded-full h-8 w-8 object-cover" />
+    </div>
+  </header>
+  <main class="py-3 max-w-6xl mx-auto px-4">
+    <ul id="category" class="flex py-4 px-3 space-x-6 text-gray-400 overflow-x-scroll whitespace-nowrap">
+    </ul>
+    <div class="p-3 text-black bg-white rounded-sm my-3">
+      <span id="total_posts"></span> items found for category <span id="category_name"></span>
+    </div>
+    <div class="flex items-center justify-between my-4">
+      <div class="flex items-center space-x-3">
+        <label for="sort-of-view_section">Sort By View :</label>
+        <select id="sort_of_view_section" class="px-4 py-2 bg-white text-gray-400 focus:outline-none">
+          <option value="default">Default</option>
+          <option value="total_view">Total Views</option>
+          <option value="rating.number">Ratings</option>
+        </select>
+      </div>
+      <ul class="flex space-x-3 items-center">
+        <li><button id="todays_pick_btn" class="transition-all text-violet-600 border border-violet-500 rounded-sm py-1 px-2">Today's Pic</button></li>
+        <li><button id="trending_btn" class="transition-all text-violet-600 border border-violet-500 rounded-sm py-1 px-2">Trending</button></li>
+      </ul>
+    </div>
+    <section id="posts-section" class="space-y-4"></section>
+  </main>
+  <footer class="py-10 space-y-2 text-center bg-white">
+    <p>Copyright 2022 News Portal</p>
+    <p><i>This website is created by SH MARUF</i></p>
+  </footer>
+  <script src="index.js"></script>
+</body>
+</html>
